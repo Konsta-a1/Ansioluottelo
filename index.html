@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#222222" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Konsta Aalto – CV</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Konsta Aalto</h1>
+      <nav>
+        <a href="#about">Tietoa minusta</a>
+        <a href="#koulutus">Koulutus</a>
+        <a href="#projects">Työkokemus</a>
+        <a href="#skills">Taidot</a>
+        <a href="#kielet">Kielitaito</a>
+        <a href="#pätevyydet">Pätevyydet</a>
+        <a href="#contact">Yhteystiedot</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container about-flex">
+      <div class="about-text">
+        <h2>Tietoa minusta</h2>
+        <p>Hei olen Konsta. Olen reipas, ahkera ja urheilullinen nuori, jonka asenne työntekoon ja oppimiseen on kunnossa. Hoidan tehtävät hyvin, eikä mikään työtehtävä ole liian tylsä!</p>
+      </div>
+      <img src="profile.JPG" alt="Konsta Aalto" class="profile-pic"/>
+    </div>
+  </section>
+
+  <section id="koulutus">
+    <div class="container">
+      <h2>Koulutus</h2>
+      <ul class="koulutus">
+        <li>Leppäkorven koulu 2022–</li>
+        <li>Vierumäen koulu 2017–2022</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Työkokemus</h2>
+      <ul class="project-list">
+        <li>
+          <h3>K-Citymarket Jumbo     7.–11.4.2025</h3>
+          <p>Hyllytin, vedin tuotteita eteenpäin, hinnoitin ja hälytin vaatteita.</p>
+        </li>
+        <li>
+          <h3>Varia-TET kone- ja tuotantotekniikka     27.–31.1.2025</h3>
+          <p>Ohjelmoin CNC-konetta ja hitsasin MIG-koneella.</p>
+        </li>
+        <li>
+          <h3>Raksa-TET (järjestäjinä rakennusteollisuus RT, GRK Oyj, TTS , YIT Oyj ja Varia)     4.–8.11.2025</h3>
+          <p>Harjoittelin ajamista maarakennussimulaattorilla, traktorilla ja kaivinkoneella. Tutustuin eri rakennusalan osa-alueiden ja kiinteistöpalvelu-alan perusteisiin.</p>
+        </li>
+        <li>
+          <h3>Vantaan musiikki     16-20.9.2024</h3>
+          <p>Soittimien huolto, hyllytys, siivous ja asiakaspalvelu.
+      </ul>
+    </div>
+  </section>
+
+<section id="skills">
+  <div class="container">
+    <h2>Taidot</h2>
+    <ul class="skills">
+      <li>Ryhmätyötaidot</li>
+      <li>Musiikki (kitara & laulu)</li>
+      <li>Nopea oppimaan</li>
+      <li>Urheilullisuus</li>
+      <li>Koodaus (Python, HTML, CSS, Javascript)</li>
+      <li>Matematiikka</li>
+      <li>Ongelmanratkaisu</li>
+      <li>Tilannetaju</li>
+      <li>IT-taidot (MS Office, Google)</li>
+    </ul>
+  </div>
+</section>
+
+<section id="kielet">
+  <div class="container">
+    <h2>Kielitaito</h2>
+    <ul class="kielet">
+      <li>Suomi (äidinkieli)</li>
+      <li>Englanti (kiitettävä)</li>
+      <li>Ruotsi (tyydyttävä)</li>
+    </ul>
+  </div>
+</section>
+
+<section id="pätevyydet">
+  <div class="container">
+    <h2>Pätevyydet</h2>
+    <ul class="pätevyydet">
+      <li>Työturvallisuuskortti     2024–2028</li>
+    </ul>
+  </div>
+</section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Yhteystiedot</h2>
+      <p>Sähköposti: <a href="mailto:konsta.0x@gmail.com">konsta.0x@gmail.com</a></p>
+      <p>Puhelin: 040 141 0377</p>
+    </div>
+  </section>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered with scope: ', registration.scope);
+        })
+        .catch(error => {
+          console.log('Service Worker registration failed: ', error);
+        });
+    });
+  }
+</script>
+
+<footer>
+  <div class="container">
+    <p>©PS tämä koko sivu on itse koodattu!!!
+
+</body>
+</html>
